@@ -1,0 +1,11 @@
+h1 {
+  background-color: aqua;
+}
+
+table {
+  background-color: gainsboro;
+}
+
+thead th {
+  background-color: rgba(150, 150, 150, 1);
+}

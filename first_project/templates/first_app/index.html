@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Fjango Level Two</title>
+        <link rel="stylesheet" href="{% static "css/my.css" %}" />
+    </head>
+    <body>
+        <h1>This is liquicity</h1>
+        
+        <div class="djangotwo">
+            {% if access_records %}
+            <table>
+                <thead>
+                    <th>Site Name</th>
+                    <th>Date Access</th>
+                </thead>
+                <tbody>
+                    {% for acc in access_records %}
+                        <tr>
+                            <td>{{ acc.name }}</td>
+                            <td>{{ acc.date }}</td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+            {% else %}
+                <p> No records </p>
+            {% endif %}
+        </div>
+                
+    </body>
+</html>

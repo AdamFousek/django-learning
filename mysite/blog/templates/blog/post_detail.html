@@ -3,7 +3,7 @@
 <h1 class="posttitle changin-color">{{ post.title }}</h1>
 {% if post.published_date %}
 <div class="date postdate">
-  {{ post.published_date }}
+    {{ post.published_date }}
 </div>
 {% else %}
 <a class="btn btn-success" href="{% url 'post_publish' pk=post.pk %}">Publish</a>
@@ -20,20 +20,20 @@
 <a class="btn btn-info btn-comment" href="{% url 'add_comment_to_post' pk=post.pk %}">Add comment</a>
 
 <div class="container">
-  {% for comment in post.comments.all %}
-  <br>
-  {% if user.is_authenticated or commment.approved_comment %}
-  {{ comment.created_date }}
-  {% if not comment.approved_comment %}
-  <a class="btn btn-danger" href="{% url 'comment_remove' pk=comment.pk %}">Remove comment</a>
-  <a class="btn btn-success" href="{% url 'comment_approve' pk=comment.pk %}">Approve post</a>
-  {% endif %}
-  <p>{{ comment.text|safe|linebreaksbr }}</p>
-  <p>Posted by: {{ comment:author }}</p>
-  {% endif %}
-  {% empty %}
-  <p>No comments</p>
-  {% endfor %}
+    {% for comment in post.comments.all %}
+    <br>
+    {% if user.is_authenticated or commment.approved_comment %}
+    {{ comment.created_date }}
+    {% if not comment.approved_comment %}
+    <a class="btn btn-danger" href="{% url 'comment_remove' pk=comment.pk %}">Remove comment</a>
+    <a class="btn btn-success" href="{% url 'comment_approve' pk=comment.pk %}">Approve post</a>
+    {% endif %}
+    <p>{{ comment.text|safe|linebreaksbr }}</p>
+    <p>Posted by: {{ comment.author }}</p>
+    {% endif %}
+    {% empty %}
+    <p>No comments</p>
+    {% endfor %}
 </div>
 
 {% endblock %}

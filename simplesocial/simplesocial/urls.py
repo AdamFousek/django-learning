@@ -16,6 +16,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from . import views
+from accounts import views as account_views
+from rest_framework import routers
+
+router = routers.DefaultRouter()
+router.register(r'api/users', account_views.UserViewSet)
+router.register(r'api/groups', account_views.GroupViewSet)
 
 urlpatterns = [
     path('', views.HomePage.as_view(), name='home'),
@@ -26,4 +32,6 @@ urlpatterns = [
     path('accounts/', include('django.contrib.auth.urls')),
     path('posts/', include('posts.urls', namespace='posts')),
     path('groups/', include('groups.urls', namespace='groups')),
+    path('', include(router.urls)),
+    path('api-auth/', include('rest_framework.urls', namespace='rest_framework'))
 ]

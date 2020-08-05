@@ -1,0 +1,670 @@
+<?xml version="1.0" encoding="utf-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+    <name>route</name>
+    <open>1</open>
+    <description>
+    <![CDATA[
+        popisek
+    ]]>
+    </description>
+    <Style id="path"><LineStyle><color>b20000ff</color><width>6</width></LineStyle></Style>
+    <Style id="routepoint"><IconStyle><color>b20000ff</color><Icon><href>http://maps.google.com/mapfiles/kml/shapes/placemark_square.png</href></Icon></IconStyle></Style>
+    <Style id="waypoint"><IconStyle><color>b20000ff</color><Icon><href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href></Icon></IconStyle></Style>
+    <Folder>
+        <name>1. část</name>
+        <visibility>1</visibility>
+        <open>1</open>
+        <Folder>
+            <name>Itinerar Start -&gt; Zauliční</name>
+            <visibility>1</visibility>
+            <open>0</open>
+            <Placemark>
+                <name>Start</name>
+                <visibility>1</visibility>
+                <description>
+                <![CDATA[
+                    <table>
+                        <tr><td>Longitude: 18.16459134221077</td></tr>
+                        <tr><td>Latitude: 49.829092025756836</td></tr>
+                        <tr><td>Altitude: 251</td></tr>
+                    </table>
+                ]]>
+                </description>
+                <styleUrl>#waypoint</styleUrl>
+                <Point>
+                    <coordinates>
+                        18.16459134221077,49.829092025756836,251
+                    </coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>náměstí Jana Nerudy</name>
+                <visibility>1</visibility>
+                <description>
+                <![CDATA[
+                    <table>
+                        <tr><td>Longitude: 18.164266794919968</td></tr>
+                        <tr><td>Latitude: 49.829178526997566</td></tr>
+                        <tr><td>Altitude: 251</td></tr>
+                    </table>
+                ]]>
+                </description>
+                <styleUrl>#waypoint</styleUrl>
+                <Point>
+                    <coordinates>
+                        18.164266794919968,49.829178526997566,251
+                    </coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>17. listopadu</name>
+                <visibility>1</visibility>
+                <description>
+                <![CDATA[
+                    <table>
+                        <tr><td>Longitude: 18.164392858743668</td></tr>
+                        <tr><td>Latitude: 49.82941657304764</td></tr>
+                        <tr><td>Altitude: 251</td></tr>
+                    </table>
+                ]]>
+                </description>
+                <styleUrl>#waypoint</styleUrl>
+                <Point>
+                    <coordinates>
+                        18.164392858743668,49.82941657304764,251
+                    </coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name></name>
+                <visibility>1</visibility>
+                <description>
+                <![CDATA[
+                    <table>
+                        <tr><td>Longitude: 18.16372901201248</td></tr>
+                        <tr><td>Latitude: 49.82957884669304</td></tr>
+                        <tr><td>Altitude: 252</td></tr>
+                    </table>
+                ]]>
+                </description>
+                <styleUrl>#waypoint</styleUrl>
+                <Point>
+                    <coordinates>
+                        18.16372901201248,49.82957884669304,252
+                    </coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name></name>
+                <visibility>1</visibility>
+                <description>
+                <![CDATA[
+                    <table>
+                        <tr><td>Longitude: 18.16366598010063</td></tr>
+                        <tr><td>Latitude: 49.82947424054146</td></tr>
+                        <tr><td>Altitude: 252</td></tr>
+                    </table>
+                ]]>
+                </description>
+                <styleUrl>#waypoint</styleUrl>
+                <Point>
+                    <coordinates>
+                        18.16366598010063,49.82947424054146,252
+                    </coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name></name>
+                <visibility>1</visibility>
+                <description>
+                <![CDATA[
+                    <table>
+                        <tr><td>Longitude: 18.163054436445236</td></tr>
+                        <tr><td>Latitude: 49.82960768043995</td></tr>
+                        <tr><td>Altitude: 253</td></tr>
+                    </table>
+                ]]>
+                </description>
+                <styleUrl>#waypoint</styleUrl>
+                <Point>
+                    <coordinates>
+                        18.163054436445236,49.82960768043995,253
+                    </coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name></name>
+                <visibility>1</visibility>
+                <description>
+                <![CDATA[
+                    <table>
+                        <tr><td>Longitude: 18.156165182590485</td></tr>
+                        <tr><td>Latitude: 49.82555687427521</td></tr>
+                        <tr><td>Altitude: 241</td></tr>
+                    </table>
+                ]]>
+                </description>
+                <styleUrl>#waypoint</styleUrl>
+                <Point>
+                    <coordinates>
+                        18.156165182590485,49.82555687427521,241
+                    </coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>Pod Nemocnicí</name>
+                <visibility>1</visibility>
+                <description>
+                <![CDATA[
+                    <table>
+                        <tr><td>Longitude: 18.156192004680634</td></tr>
+                        <tr><td>Latitude: 49.82545830309391</td></tr>
+                        <tr><td>Altitude: 240</td></tr>
+                    </table>
+                ]]>
+                </description>
+                <styleUrl>#waypoint</styleUrl>
+                <Point>
+                    <coordinates>
+                        18.156192004680634,49.82545830309391,240
+                    </coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>Pod Nemocnicí</name>
+                <visibility>1</visibility>
+                <description>
+                <![CDATA[
+                    <table>
+                        <tr><td>Longitude: 18.156479001045227</td></tr>
+                        <tr><td>Latitude: 49.824728071689606</td></tr>
+                        <tr><td>Altitude: 237</td></tr>
+                    </table>
+                ]]>
+                </description>
+                <styleUrl>#waypoint</styleUrl>
+                <Point>
+                    <coordinates>
+                        18.156479001045227,49.824728071689606,237
+                    </coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>V Zahradách</name>
+                <visibility>1</visibility>
+                <description>
+                <![CDATA[
+                    <table>
+                        <tr><td>Longitude: 18.151727467775345</td></tr>
+                        <tr><td>Latitude: 49.82566148042679</td></tr>
+                        <tr><td>Altitude: 229</td></tr>
+                    </table>
+                ]]>
+                </description>
+                <styleUrl>#waypoint</styleUrl>
+                <Point>
+                    <coordinates>
+                        18.151727467775345,49.82566148042679,229
+                    </coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name></name>
+                <visibility>1</visibility>
+                <description>
+                <![CDATA[
+                    <table>
+                        <tr><td>Longitude: 18.150173127651215</td></tr>
+                        <tr><td>Latitude: 49.828877449035645</td></tr>
+                        <tr><td>Altitude: 239</td></tr>
+                    </table>
+                ]]>
+                </description>
+                <styleUrl>#waypoint</styleUrl>
+                <Point>
+                    <coordinates>
+                        18.150173127651215,49.828877449035645,239
+                    </coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name></name>
+                <visibility>1</visibility>
+                <description>
+                <![CDATA[
+                    <table>
+                        <tr><td>Longitude: 18.148035407066345</td></tr>
+                        <tr><td>Latitude: 49.83102723956108</td></tr>
+                        <tr><td>Altitude: 237</td></tr>
+                    </table>
+                ]]>
+                </description>
+                <styleUrl>#waypoint</styleUrl>
+                <Point>
+                    <coordinates>
+                        18.148035407066345,49.83102723956108,237
+                    </coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name></name>
+                <visibility>1</visibility>
+                <description>
+                <![CDATA[
+                    <table>
+                        <tr><td>Longitude: 18.147370219230652</td></tr>
+                        <tr><td>Latitude: 49.83043044805527</td></tr>
+                        <tr><td>Altitude: 235</td></tr>
+                    </table>
+                ]]>
+                </description>
+                <styleUrl>#waypoint</styleUrl>
+                <Point>
+                    <coordinates>
+                        18.147370219230652,49.83043044805527,235
+                    </coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name></name>
+                <visibility>1</visibility>
+                <description>
+                <![CDATA[
+                    <table>
+                        <tr><td>Longitude: 18.139150589704514</td></tr>
+                        <tr><td>Latitude: 49.82984505593777</td></tr>
+                        <tr><td>Altitude: 271</td></tr>
+                    </table>
+                ]]>
+                </description>
+                <styleUrl>#waypoint</styleUrl>
+                <Point>
+                    <coordinates>
+                        18.139150589704514,49.82984505593777,271
+                    </coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name></name>
+                <visibility>1</visibility>
+                <description>
+                <![CDATA[
+                    <table>
+                        <tr><td>Longitude: 18.136869370937347</td></tr>
+                        <tr><td>Latitude: 49.83172260224819</td></tr>
+                        <tr><td>Altitude: 269</td></tr>
+                    </table>
+                ]]>
+                </description>
+                <styleUrl>#waypoint</styleUrl>
+                <Point>
+                    <coordinates>
+                        18.136869370937347,49.83172260224819,269
+                    </coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name></name>
+                <visibility>1</visibility>
+                <description>
+                <![CDATA[
+                    <table>
+                        <tr><td>Longitude: 18.135997653007507</td></tr>
+                        <tr><td>Latitude: 49.83525708317757</td></tr>
+                        <tr><td>Altitude: 272</td></tr>
+                    </table>
+                ]]>
+                </description>
+                <styleUrl>#waypoint</styleUrl>
+                <Point>
+                    <coordinates>
+                        18.135997653007507,49.83525708317757,272
+                    </coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>Hájkovická</name>
+                <visibility>1</visibility>
+                <description>
+                <![CDATA[
+                    <table>
+                        <tr><td>Longitude: 18.122495412826538</td></tr>
+                        <tr><td>Latitude: 49.83959086239338</td></tr>
+                        <tr><td>Altitude: 297</td></tr>
+                    </table>
+                ]]>
+                </description>
+                <styleUrl>#waypoint</styleUrl>
+                <Point>
+                    <coordinates>
+                        18.122495412826538,49.83959086239338,297
+                    </coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>Družební</name>
+                <visibility>1</visibility>
+                <description>
+                <![CDATA[
+                    <table>
+                        <tr><td>Longitude: 18.122325092554092</td></tr>
+                        <tr><td>Latitude: 49.84153747558594</td></tr>
+                        <tr><td>Altitude: 309</td></tr>
+                    </table>
+                ]]>
+                </description>
+                <styleUrl>#waypoint</styleUrl>
+                <Point>
+                    <coordinates>
+                        18.122325092554092,49.84153747558594,309
+                    </coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>Zauliční</name>
+                <visibility>1</visibility>
+                <description>
+                <![CDATA[
+                    <table>
+                        <tr><td>Longitude: 18.121498972177505</td></tr>
+                        <tr><td>Latitude: 49.8429449647665</td></tr>
+                        <tr><td>Altitude: 308</td></tr>
+                    </table>
+                ]]>
+                </description>
+                <styleUrl>#waypoint</styleUrl>
+                <Point>
+                    <coordinates>
+                        18.121498972177505,49.8429449647665,308
+                    </coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>Zauliční</name>
+                <visibility>1</visibility>
+                <description>
+                <![CDATA[
+                    <table>
+                        <tr><td>Longitude: 18.121059089899063</td></tr>
+                        <tr><td>Latitude: 49.8434666544199</td></tr>
+                        <tr><td>Altitude: 309</td></tr>
+                    </table>
+                ]]>
+                </description>
+                <styleUrl>#waypoint</styleUrl>
+                <Point>
+                    <coordinates>
+                        18.121059089899063,49.8434666544199,309
+                    </coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>Zauliční</name>
+                <visibility>1</visibility>
+                <description>
+                <![CDATA[
+                    <table>
+                        <tr><td>Longitude: 18.1217859685421</td></tr>
+                        <tr><td>Latitude: 49.843970239162445</td></tr>
+                        <tr><td>Altitude: 305</td></tr>
+                    </table>
+                ]]>
+                </description>
+                <styleUrl>#waypoint</styleUrl>
+                <Point>
+                    <coordinates>
+                        18.1217859685421,49.843970239162445,305
+                    </coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>Zauliční</name>
+                <visibility>1</visibility>
+                <description>
+                <![CDATA[
+                    <table>
+                        <tr><td>Longitude: 18.12163308262825</td></tr>
+                        <tr><td>Latitude: 49.84402857720852</td></tr>
+                        <tr><td>Altitude: 305</td></tr>
+                    </table>
+                ]]>
+                </description>
+                <styleUrl>#waypoint</styleUrl>
+                <Point>
+                    <coordinates>
+                        18.12163308262825,49.84402857720852,305
+                    </coordinates>
+                </Point>
+            </Placemark>
+        </Folder>
+        <Folder>
+            <name>Planovani 49.829220N, 18.164672W -&gt; 49.844112N, 18.121671W</name>
+            <visibility>1</visibility>
+            <open>0</open>
+            <Placemark>
+                <name>49.829220N, 18.164672W</name>
+                <visibility>1</visibility>
+                <description>
+                <![CDATA[
+                    <table>
+                        <tr><td>Longitude: 18.164671808481216</td></tr>
+                        <tr><td>Latitude: 49.8292201012373</td></tr>
+                    </table>
+                ]]>
+                </description>
+                <styleUrl>#routepoint</styleUrl>
+                <Point>
+                    <coordinates>
+                        18.164671808481216,49.8292201012373
+                    </coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>49.844112N, 18.121671W</name>
+                <visibility>1</visibility>
+                <description>
+                <![CDATA[
+                    <table>
+                        <tr><td>Longitude: 18.12167063355446</td></tr>
+                        <tr><td>Latitude: 49.84411172568798</td></tr>
+                    </table>
+                ]]>
+                </description>
+                <styleUrl>#routepoint</styleUrl>
+                <Point>
+                    <coordinates>
+                        18.12167063355446,49.84411172568798
+                    </coordinates>
+                </Point>
+            </Placemark>
+        </Folder>
+        <Placemark><name>route</name><styleUrl>#path</styleUrl>
+        <LineString>
+            <tessellate>1</tessellate>
+            <coordinates>
+                18.16459134221077,49.829092025756836,251
+                18.164482712745667,49.829120859503746,251
+                18.16436603665352,49.829149693250656,251
+                18.164266794919968,49.829178526997566,251
+                18.164392858743668,49.82941657304764,251
+                18.16372901201248,49.82957884669304,252
+                18.16366598010063,49.82947424054146,252
+                18.163350820541382,49.82955537736416,253
+                18.163054436445236,49.82960768043995,253
+                18.16301017999649,49.82952654361725,253
+                18.162901550531387,49.829352870583534,253
+                18.162776827812195,49.82916712760925,253
+                18.16273123025894,49.82907459139824,252
+                18.162524700164795,49.82873260974884,252
+                18.162308782339096,49.82837922871113,251
+                18.16204860806465,49.82793264091015,251
+                18.161931931972504,49.827758967876434,250
+                18.161761611700058,49.82747532427311,250
+                18.161761611700058,49.82742838561535,250
+                18.161788433790207,49.82738211750984,250
+                18.161788433790207,49.8273479193449,249
+                18.161769658327103,49.82730098068714,249
+                18.161662369966507,49.82713334262371,249
+                18.161042779684067,49.826165065169334,244
+                18.160997182130814,49.826130867004395,244
+                18.160934150218964,49.82610136270523,243
+                18.16087245941162,49.8260959982872,243
+                18.160782605409622,49.8260959982872,243
+                18.16049426794052,49.82614830136299,244
+                18.16030651330948,49.82618249952793,245
+                18.16015362739563,49.826188534498215,245
+                18.16002756357193,49.826188534498215,246
+                18.159631937742233,49.826165065169334,246
+                18.15924569964409,49.826130867004395,246
+                18.158679753541946,49.82603766024113,246
+                18.15773695707321,49.82585795223713,244
+                18.156820982694626,49.825684279203415,243
+                18.156165182590485,49.82555687427521,241
+                18.156192004680634,49.82545830309391,240
+                18.156479001045227,49.824728071689606,237
+                18.15617322921753,49.82471063733101,236
+                18.155939877033234,49.824699237942696,236
+                18.15574273467064,49.824699237942696,236
+                18.155544251203537,49.82471063733101,236
+                18.155094981193542,49.824751541018486,236
+                18.154431134462357,49.824838042259216,236
+                18.15412536263466,49.82488498091698,235
+                18.15388262271881,49.824936613440514,235
+                18.15363183617592,49.824988916516304,235
+                18.153397142887115,49.82505865395069,234
+                18.153155744075775,49.82513375580311,234
+                18.152930438518524,49.82522092759609,234
+                18.152320235967636,49.82548177242279,232
+                18.15208688378334,49.82556827366352,231
+                18.15187096595764,49.82563801109791,231
+                18.15179854631424,49.82566148042679,230
+                18.151727467775345,49.82566148042679,229
+                18.151448518037796,49.82641451060772,231
+                18.1514310836792,49.82662305235863,231
+                18.151574581861496,49.827335849404335,230
+                18.15158262848854,49.82788100838661,231
+                18.151547759771347,49.827950075268745,232
+                18.1514310836792,49.82808955013752,233
+                18.150576800107956,49.82862263917923,237
+                18.150173127651215,49.828877449035645,239
+                18.14993977546692,49.82907459139824,241
+                18.14969703555107,49.82929453253746,241
+                18.149337619543076,49.82966534793377,241
+                18.149031847715378,49.829972460865974,239
+                18.14832240343094,49.83073152601719,236
+                18.148035407066345,49.83102723956108,237
+                18.1478288769722,49.83091123402119,236
+                18.147657215595245,49.83076639473438,235
+                18.1474868953228,49.830610156059265,235
+                18.147370219230652,49.83043044805527,235
+                18.146786838769913,49.830447882413864,239
+                18.146355003118515,49.83046531677246,242
+                18.145106434822083,49.83057528734207,246
+                18.14479261636734,49.83059272170067,248
+                18.14454048871994,49.830586686730385,249
+                18.14431518316269,49.83057528734207,250
+                18.143938332796097,49.830534383654594,251
+                18.142286092042923,49.83030840754509,261
+                18.14156726002693,49.83019843697548,265
+                18.139150589704514,49.82984505593777,271
+                18.138297647237778,49.83018100261688,270
+                18.138072341680527,49.83028560876846,270
+                18.13786581158638,49.83038417994976,270
+                18.137623071670532,49.830534383654594,270
+                18.137542605400085,49.830586686730385,270
+                18.137497007846832,49.83064502477646,270
+                18.137452751398087,49.83070872724056,270
+                18.137443363666534,49.83076103031635,270
+                18.137452751398087,49.83082473278046,270
+                18.137479573488235,49.83088843524456,270
+                18.137533217668533,49.83098700642586,269
+                18.137551993131638,49.83110837638378,269
+                18.137533217668533,49.83121834695339,268
+                18.137470185756683,49.83132295310497,268
+                18.137389719486237,49.83142152428627,268
+                18.137255609035492,49.8315254598856,268
+                18.13708394765854,49.83161799609661,268
+                18.136869370937347,49.83172260224819,269
+                18.1361585855484,49.83318842947483,271
+                18.136068731546402,49.83339160680771,271
+                18.13603386282921,49.83360014855862,270
+                18.13600704073906,49.83368128538132,270
+                18.13597083091736,49.833756387233734,270
+                18.13591718673706,49.83382008969784,270
+                18.135772347450256,49.83396492898464,270
+                18.13575491309166,49.834028631448746,269
+                18.13575491309166,49.834057465195656,269
+                18.135772347450256,49.83409233391285,269
+                18.13581794500351,49.83414463698864,269
+                18.135961443185806,49.834266006946564,269
+                18.13603386282921,49.834347143769264,270
+                18.136078119277954,49.834399446845055,270
+                18.136114329099655,49.83446314930916,270
+                18.136114329099655,49.834532886743546,270
+                18.136104941368103,49.834822565317154,271
+                18.136104941368103,49.83492650091648,271
+                18.13609689474106,49.83502507209778,271
+                18.135997653007507,49.83525708317757,272
+                18.135242611169815,49.835384488105774,274
+                18.134470134973526,49.835523292422295,276
+                18.13330203294754,49.8357492685318,277
+                18.13212588429451,49.8360101133585,281
+                18.13097521662712,49.83628839254379,282
+                18.12995195388794,49.836560636758804,284
+                18.129493296146393,49.836699441075325,285
+                18.1290440261364,49.8368389159441,285
+                18.127193301916122,49.83746454119682,289
+                18.12493085861206,49.838379845023155,291
+                18.12476858496666,49.838403314352036,292
+                18.12471494078636,49.83842074871063,292
+                18.12464252114296,49.838460981845856,292
+                18.12457948923111,49.83852468430996,292
+                18.12454327940941,49.83855955302715,292
+                18.12448963522911,49.83860582113266,292
+                18.124336749315262,49.83868092298508,292
+                18.124166429042816,49.838750660419464,293
+                18.123699724674225,49.838889464735985,294
+                18.123537451028824,49.83895920217037,294
+                18.123393952846527,49.83905777335167,294
+                18.12269389629364,49.83952112495899,296
+                18.12263086438179,49.839555993676186,296
+                18.122495412826538,49.83959086239338,297
+                18.122514188289642,49.839694797992706,297
+                18.122487366199493,49.84138660132885,308
+                18.122432380914688,49.84149657189846,308
+                18.122325092554092,49.84153747558594,309
+                18.12235191464424,49.84167091548443,309
+                18.12235191464424,49.84176881611347,309
+                18.12234252691269,49.84184995293617,309
+                18.122325092554092,49.84193108975887,309
+                18.12228888273239,49.842006862163544,309
+                18.122235238552094,49.84207592904568,309
+                18.122172206640244,49.84215170145035,309
+                18.122064918279648,49.84223820269108,309
+                18.122001886367798,49.842284470796585,309
+                18.121812790632248,49.84240651130676,310
+                18.121714890003204,49.842470213770866,310
+                18.1215700507164,49.842597618699074,310
+                18.121498972177505,49.842718988657,309
+                18.121489584445953,49.84277129173279,309
+                18.1214801967144,49.84283499419689,309
+                18.121498972177505,49.8429449647665,308
+                18.121445327997208,49.842979833483696,308
+                18.121390342712402,49.84302073717117,308
+                18.121273666620255,49.84317697584629,309
+                18.121193200349808,49.843321815133095,309
+                18.121059089899063,49.8434666544199,309
+                18.12122941017151,49.84368659555912,308
+                18.121327310800552,49.8437912017107,307
+                18.121462762355804,49.8438723385334,306
+                18.121588826179504,49.84392397105694,306
+                18.1217859685421,49.843970239162445,305
+                18.121678680181503,49.84401650726795,305
+                18.12163308262825,49.84402857720852,305
+            </coordinates>
+        </LineString>
+        </Placemark>
+    </Folder>
+</Document>
+</kml>

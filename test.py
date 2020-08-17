@@ -1,3 +1,4 @@
+"""
 import graphene
 import json
 
@@ -15,3 +16,18 @@ result = schema.execute()
 
 items = dict(result.data.items())
 print(json.dumps(items, indent=4))
+"""
+NOT_STARTED = 'not-started'
+IN_PROGRESS = 'in-progress'
+STUCK = 'stuck'
+DONE = 'done'
+STATUS_CHOICES = [
+    (NOT_STARTED, 'Not started'),
+    (IN_PROGRESS, 'In progress'),
+    (STUCK, 'Stuck'),
+    (DONE, 'Done'),
+]
+
+list_of_tuples = [(1, 2), (3, 4)]
+for (x, y) in STATUS_CHOICES:
+    print(x, y)

@@ -1,0 +1,15 @@
+<h2>{{ todo.title }}</h2>
+<p>{{ todo.description }}</p>
+<p>
+    <span style="font-weight: bold;">{{ todo.get_status_display }}</span> -
+    <span>{{ todo.due_date }}</span>
+</p>
+<form action="{% url 'todo:change_status' todo.id %}" method="post">
+{% csrf_token %}
+<select id="status" name="status">
+{% for value, label in todo.STATUS_CHOICES %}
+    <option value="{{ value }}"  {% if todo.status == value %}selected{% endif %}>{{ label }}</option>
+{% endfor %}
+</select>
+<input type="submit" value="Change status">
+</form>

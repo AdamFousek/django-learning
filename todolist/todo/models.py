@@ -8,7 +8,7 @@ class Category(models.Model):
     name = models.CharField(max_length=200)
     parent_category = models.ForeignKey(
         'self', null=True, blank=True, on_delete=models.CASCADE)
-    slug = models.CharField(max_length=200)
+    slug = models.CharField(max_length=200, unique=True)
 
     def __str__(self):
         return self.name
@@ -38,6 +38,10 @@ class Todo(models.Model):
 
     def is_overdue_date(self):
         return self.due_date <= timezone.now()
+
+    is_overdue_date.admin_order_field = 'due_date'
+    is_overdue_date.boolean = True
+    is_overdue_date.short_description = 'Overdue date?'
 
     def __str__(self):
         return "{} - {}".format(self.title, self.get_status_display())

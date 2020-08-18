@@ -12,7 +12,7 @@ class IndexView(generic.ListView):
 
     def get_queryset(self):
         """Return the last five published questions."""
-        return Todo.objects.order_by('-created_at')[:5]
+        return Todo.objects.exclude(status=Todo.DONE).order_by('-created_at')[:5]
 
 
 class DetailView(generic.DetailView):

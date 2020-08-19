@@ -8,4 +8,5 @@ urlpatterns = [
     path('<int:pk>/', views.DetailView.as_view(), name='detail'),
     path('<int:todo_id>/change-status/',
          views.change_status, name='change_status'),
+    path('<int:pk>', views.RemoveView.as_view(), name='remove')
 ]

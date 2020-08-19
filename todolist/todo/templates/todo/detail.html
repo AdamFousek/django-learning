@@ -1,15 +1,37 @@
-<h2>{{ todo.title }}</h2>
-<p>{{ todo.description }}</p>
-<p>
-    <span style="font-weight: bold;">{{ todo.get_status_display }}</span> -
-    <span>{{ todo.due_date }}</span>
-</p>
-<form action="{% url 'todo:change_status' todo.id %}" method="post">
-{% csrf_token %}
-<select id="status" name="status">
-{% for value, label in todo.STATUS_CHOICES %}
-    <option value="{{ value }}"  {% if todo.status == value %}selected{% endif %}>{{ label }}</option>
-{% endfor %}
-</select>
-<input type="submit" value="Change status">
-</form>
+{% extends 'base.html' %}
+{% block title %}Todolist{% endblock %} 
+
+{% block content %} 
+<div class="row">
+    <div class="col">
+        <h2 class="{% if todo.is_overdue_date and not todo.status == todoModel.DONE %}text-danger{% endif %}">{{ todo.title }}</h2>
+        <p>{{ todo.description }}</p>
+        <p>
+            Status: <span style="font-weight: bold;">{{ todo.get_status_display }}</span>
+        </p>
+        <p>
+            Due date: <span class="{% if todo.is_overdue_date and not todo.status == todoModel.DONE %}text-danger{% endif %}">{{ todo.due_date }}</span>
+        </p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-3">
+        <form class="todo-form" action="{% url 'todo:change_status' todo.id %}" method="post">
+            <div class="form-group">
+                {% csrf_token %}
+                <select id="status" class="form-control" name="status">
+                {% for value, label in todo.STATUS_CHOICES %}
+                    <option value="{{ value }}"  {% if todo.status == value %}selected{% endif %}>{{ label }}</option>
+                {% endfor %}
+                </select>
+            </div>
+            <input type="submit" class="btn btn-primary" value="Change status">
+            <a href="{% url 'todo:remove' todo.id %}" class="btn btn-danger">Remove Todo</a>
+        </form>
+    </div>
+</div>
+{% endblock %}
+
+
+
+

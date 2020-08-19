@@ -1,16 +1,83 @@
 {% extends 'base.html' %}
 {% block title %}Todolist{% endblock %} 
+{% load todo_extras %}
+
+{% block extraclasses %}<link rel="stylesheet" href="{% static 'todo/css/master.css' %}" />{% endblock %}
 
 {% block content %} 
-{% if latest_todo_list %}
-<ul>
-    {% for todo in latest_todo_list %}
-    <li>
-        <a href="{% url 'todo:detail' todo.id %}">{{ todo.title }}</a>
-    </li>
-    {% endfor %}
-</ul>
-{% else %}
-<p>No polls are available.</p>
-{% endif %}
+<div class="row">
+    <div class="col">
+        <div class="column-header">
+            <h4>{{ todoModel.NOT_STARTED|get_status_displayed }}</h4>
+        </div>
+    {% if todos|dict_key:todoModel.NOT_STARTED %}
+        {% for todo in todos|dict_key:todoModel.NOT_STARTED %}
+            <div class="card bg-light shadow-lg mb-2 rounded border {% if todo.is_overdue_date %}border-danger{% else %}border-secondary{% endif %}">
+                <div class="card-body">
+                    <h5 class="card-title {% if todo.is_overdue_date %}text-danger{% endif %}">{{ todo.title }}</h5>
+                    <p class="card-text">Due date: <small class="text-muted">{{ todo.due_date }}</small></p>
+                    <a href="{% url 'todo:detail' todo.id %}" class="text-sucess card-link">Show details</a>
+                </div>
+            </div>
+        {% endfor %}
+    {% else %}
+        <p>No todos for start</p>
+    {% endif %}
+    </div>
+    <div class="col">
+        <div class="column-header">
+            <h4>{{ todoModel.IN_PROGRESS|get_status_displayed }}</h4>
+        </div>
+    {% if todos|dict_key:todoModel.IN_PROGRESS %}
+        {% for todo in todos|dict_key:todoModel.IN_PROGRESS %}
+            <div class="card bg-light shadow-lg mb-2 rounded border {% if todo.is_overdue_date %}border-danger{% else %}border-secondary{% endif %}">
+                <div class="card-body {% if todo.is_overdue_date %}text-danger{% endif %}">
+                    <h5 class="card-title {% if todo.is_overdue_date %}text-danger{% endif %}">{{ todo.title }}</h5>
+                    <p class="card-text">Due date: <small class="text-muted">{{ todo.due_date }}</small></p>
+                    <a href="{% url 'todo:detail' todo.id %}" class="text-sucess card-link">Show details</a>
+                </div>
+            </div>
+        {% endfor %}
+    {% else %}
+        <p>No todos in progress</p>
+    {% endif %}
+    </div>
+    <div class="col">
+        <div class="column-header">
+            <h4>{{ todoModel.DONE|get_status_displayed }}</h4>
+        </div>
+    {% if todos|dict_key:todoModel.DONE %}
+        {% for todo in todos|dict_key:todoModel.DONE %}
+            <div class="card bg-light shadow-lg mb-2 rounded border border-success">
+                <div class="card-body">
+                    <h5 class="card-title">{{ todo.title }}</h5>
+                    <p class="card-text">Due date: <small class="text-muted">{{ todo.due_date }}</small></p>
+                    <a href="{% url 'todo:detail' todo.id %}" class="text-sucess card-link">Show details</a>
+                </div>
+            </div>
+        {% endfor %}
+    {% else %}
+        <p>No todos done</p>
+    {% endif %}
+    </div>
+    <div class="col">
+        <div class="column-header">
+            <h4>{{ todoModel.STUCK|get_status_displayed }}</h4>
+        </div>
+    {% if todos|dict_key:todoModel.STUCK %}
+        {% for todo in todos|dict_key:todoModel.STUCK %}
+            <div class="card bg-light shadow-lg mb-2 rounded border border-warning">
+                <div class="card-body">
+                    <h5 class="card-title">{{ todo.title }}</h5>
+                    <p class="card-text">Due date: <small class="text-muted">{{ todo.due_date }}</small></p>
+                    <a href="{% url 'todo:detail' todo.id %}" class="text-sucess card-link">Show details</a>
+                </div>
+            </div>
+        {% endfor %}
+    {% else %}
+        <p>No todos stuck</p>
+    {% endif %}
+    </div>
+</div>
+
 {% endblock %}

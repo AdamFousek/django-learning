@@ -1,7 +1,14 @@
 body {
-    background: white url('../images/liquiciity.jpg') no-repeat;
+    background-color: #b9ffba;
 }
 
-li a {
-    color: green;
+#app .header {
+    background: white url('../images/header.jpg') no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    max-height: 350px;
+}
+
+.carousel .carousel-item {
+    height: 350px;
 }

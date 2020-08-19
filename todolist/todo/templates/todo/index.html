@@ -1,11 +1,7 @@
-{% load static %}
-<link rel="stylesheet" type="text/css" href="{% static 'app/css/base.css' %}" />
-<link
-    rel="stylesheet"
-    type="text/css"
-    href="{% static 'todo/css/master.css' %}"
-/>
+{% extends 'base.html' %}
+{% block title %}Todolist{% endblock %} 
 
+{% block content %} 
 {% if latest_todo_list %}
 <ul>
     {% for todo in latest_todo_list %}
@@ -17,3 +13,4 @@
 {% else %}
 <p>No polls are available.</p>
 {% endif %}
+{% endblock %}
